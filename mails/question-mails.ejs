@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Elearning</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .content {
+        padding: 20px;
+      }
+      .content p {
+        margin: 0 0 10px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      @media (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+        }
+        .header h1 {
+          font-size: 20px;
+        }
+        .content p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="content">
+        <h1>Hello <%=name%>,</h1>
+        <p>
+          A new reply has been added to your question in the video "<%=title%>"
+        </p>
+        <p>
+          Please login to our website to view the reply and continue the
+          discussion
+        </p>
+        <p>ThankYou for being a part of our community</p>
+      </div>
+    </div>
+  </body>
+</html>
